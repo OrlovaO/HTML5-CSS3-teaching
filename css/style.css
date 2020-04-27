@@ -1,5 +1,5 @@
 /*Общие стили*/
-.body {
+body {
     width: 1920px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -10,31 +10,100 @@
 .main-header {
     width: 100%;
     margin: 0;
+    padding: 40px 150px;
     box-sizing: border-box;
     min-height: 1024px;
-    background-image: url()
+    background-image: url(../img/header-backimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #44423f;
 }
 
-.main-header .main-header-wrp1 {}
+.main-header-wrp1 {
+    width: 100%;
+    min-height: 56px;
+    margin: 0 0 285px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
 
-.main-header .logo-link-header {}
+.logo-link-header {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0 219px 0 0;
+    padding: 0;
+    width: 179px;
+    height: 56px;
+    display: flex;
+}
 
-.main-header .logo-img {}
+.logo-txt {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 11px 0;
+    font-family: "Raleway";
+    font-size: 34px;
+    line-height: 34px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
 
-.main-header .main-header-nav {}
+.main-header-nav {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
 
-.main-header .main-header-nav-link {}
+.main-header-nav-link {
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px 0 0;
+    padding: 0;
+}
 
-.main-header .main-header-basket {}
+.main-header-nav-link:last-child {
+    margin: 0;
+}
 
-.main-header .main-header-search {}
+.main-header-nav-link:hover {
+    color: #c7b299;
+}
+.main-header-nav-link:active {
+    color: #fff;
+}
 
-.main-header .main-header-search-click {}
+.main-header-basket {
+    width: 18px;
+    height: 24px;
+    opacity: 0;
+}
 
-.main-header .main-header-wrp2 {}
+.main-header-search {
+    opacity: 0;
+}
 
-.main-header .main-header-switch {}
+.main-header-search-click {}
 
-.main-header .main-header-content {}
+.main-header-wrp2 {
+    
+}
 
-.main-header .main-header-pag {}
+.main-header-switch {
+   opacity: 0;
+}
+
+.main-header-content {}
+
+.main-header-pag {
+    width: 100px;
+    height: 15px;
+}
