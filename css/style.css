@@ -1,0 +1,40 @@
+/*Общие стили*/
+.body {
+    width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/*Стили для header*/
+
+.main-header {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 1024px;
+    background-image: url()
+}
+
+.main-header .main-header-wrp1 {}
+
+.main-header .logo-link-header {}
+
+.main-header .logo-img {}
+
+.main-header .main-header-nav {}
+
+.main-header .main-header-nav-link {}
+
+.main-header .main-header-basket {}
+
+.main-header .main-header-search {}
+
+.main-header .main-header-search-click {}
+
+.main-header .main-header-wrp2 {}
+
+.main-header .main-header-switch {}
+
+.main-header .main-header-content {}
+
+.main-header .main-header-pag {}
