@@ -39,13 +39,34 @@ body {
     display: flex;
 }
 
+.logo-img {
+    fill: #fff;
+}
+
+.logo-link-header:hover .logo-img{
+    fill: #c7b299;
+}
+
+.logo-link-header:hover .logo-txt{
+    color: #c7b299;
+}
+
+.logo-link-header:active .logo-img{
+    fill: #fff;
+}
+
+.logo-link-header:active .logo-txt{
+    color: #fff;
+}
+
 .logo-txt {
     box-sizing: border-box;
+    width: 115px;
     margin: 0;
     padding: 11px 0;
     font-family: 'Raleway', sans-serif;
-    font-size: 34px;
-    line-height: 34px;
+    font-size: 31px;
+    line-height: 31px;
     font-weight: 400;
     letter-spacing: 0.05em;
     color: #fff;
@@ -283,4 +304,98 @@ body {
     margin-right: 6px;
     border: 2.0px solid #d3c1ad;
     background-color: transparent;
+}
+
+/*Стили для main*/
+
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Стили для services*/
+
+.services {
+    width: 100%;
+    min-height: 373px;
+    margin: 0;
+    padding: 80px 377px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-link {
+    width: 266px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.services-link:after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    margin: 30px auto 0;
+    padding: 0;
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+}
+
+.services-link:hover .services-svg {
+    fill: #998675;
+}
+
+.services-link:hover .services-link-title {
+    color: #998675;
+}
+
+.services-link:hover:after {
+    background-color: #998675;
+}
+
+.services-link:active .services-svg {
+    fill: #555555;
+}
+
+.services-link:active .services-link-title {
+    color: #555;
+}
+
+.services-link:active:after {
+    background-color: #f1eee9;
+}
+
+.services-svg {
+    fill: #555555;
+}
+
+.services-link-title {
+    display: block;
+    margin: 29px 0 19px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555;
+}
+
+.services-link-txt {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #8c8c8c;
+    text-indent: 1.2em;
 }
