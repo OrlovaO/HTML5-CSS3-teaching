@@ -43,19 +43,19 @@ body {
     fill: #fff;
 }
 
-.logo-link-header:hover .logo-img{
+.logo-link-header:hover .logo-img {
     fill: #c7b299;
 }
 
-.logo-link-header:hover .logo-txt{
+.logo-link-header:hover .logo-txt {
     color: #c7b299;
 }
 
-.logo-link-header:active .logo-img{
+.logo-link-header:active .logo-img {
     fill: #fff;
 }
 
-.logo-link-header:active .logo-txt{
+.logo-link-header:active .logo-txt {
     color: #fff;
 }
 
@@ -245,6 +245,7 @@ body {
     line-height: 24px;
     font-weight: 300;
     word-break: break-all;
+    word-wrap: break-word;
 }
 
 .main-header-started {
@@ -398,4 +399,55 @@ main {
     font-weight: 300;
     color: #8c8c8c;
     text-indent: 1.2em;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/*Стили для waxom-realization*/
+
+.waxom-realization {
+    width: 100%;
+    min-height: 700px;
+    margin: 0;
+    padding: 83px 345px 0;
+    box-sizing: border-box;
+    background-color: #fbfaf8;
+    text-align: center;
+}
+
+.waxom-realization-title {
+    display: block;
+    margin: 0 0 24px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #555;
+}
+
+.waxom-realization-txt {
+    margin: 0 0 40px;
+    padding: 0 236px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 300;
+    color: #8c8c8c;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.waxom-realization-img {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 482px;
+    background-image: url('../img/waxom_realization_img1.jpg'), url('../img/waxom_realization_img2.jpg'), url('../img/waxom_realization_img3.jpg');
+    background-size: 770px 483px, 770px 400px, 770px 400px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center, left bottom, right bottom;
 }
