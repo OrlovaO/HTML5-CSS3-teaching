@@ -115,6 +115,18 @@ body {
     background-color: transparent;
 }
 
+.img-basket {
+    fill: #fff;
+}
+
+.img-basket:hover {
+    fill: #c7b299;
+}
+
+.img-basket:active {
+    fill: #fff;
+}
+
 .main-header-search {
     box-sizing: border-box;
     margin: 0 0 0 28px;
