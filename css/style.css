@@ -730,23 +730,13 @@ main {
     padding: 106px 146px 105px 144px;
     width: 370px;
     height: 237px;
-    background-color:  rgba(17,17,17,0.7);
+    background-color: rgba(17, 17, 17, 0.7);
     position: absolute;
     display: none;
 }
 
 .latest-projects-unit:hover .latest-projects-unit-fon {
     display: block;
-}
-
-.latest-projects-uf-click{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 106px 0 0 144px;
-    width: 370px;
-    height: 237px;
-    position: absolute;
-    display: none;
 }
 
 .latest-projects-unit:hover .latest-projects-uf-click {
@@ -760,7 +750,9 @@ main {
     padding: 0;
     width: 26px;
     height: 26px;
-    float: left;
+    position: absolute;
+    top: 106px;
+    left: 144px;
 }
 
 .latest-projects-uf-link-svg {
@@ -778,12 +770,15 @@ main {
 .latest-projects-uf-lupa-click {
     outline: none;
     box-sizing: border-box;
-    margin: 0 0 0 28px;
+    margin: 0;
     padding: 0;
     width: 26px;
     height: 25px;
     border: 0;
     background-color: transparent;
+    position: absolute;
+    top: 106px;
+    left: 198px;
 }
 
 .latest-projects-uf-lupa {
