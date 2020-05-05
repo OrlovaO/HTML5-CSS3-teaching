@@ -744,30 +744,22 @@ main {
 }
 
 .latest-projects-uf-link {
-    display: block;
-    text-decoration: none;
+    display: none;
+    outline: none;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     width: 26px;
-    height: 26px;
+    height: 25px;
+    border: 0;
+    background-color: transparent;
     position: absolute;
     top: 106px;
     left: 144px;
 }
 
-.latest-projects-uf-link-svg {
-    fill: #fff;
-}
-
-.latest-projects-uf-link:hover .latest-projects-uf-link-svg {
-    fill: #c7b299;
-}
-
-.latest-projects-uf-link:active .latest-projects-uf-link-svg {
-    fill: #fff;
-}
-
 .latest-projects-uf-lupa-click {
+    display: none;
     outline: none;
     box-sizing: border-box;
     margin: 0;
@@ -781,16 +773,24 @@ main {
     left: 198px;
 }
 
-.latest-projects-uf-lupa {
+.latest-projects-uf-link-svg,
+.latest-projects-uf-lupa{
     fill: #fff;
 }
 
-.latest-projects-uf-lupa-click:hover .latest-projects-uf-lupa {
+.latest-projects-uf-link:hover .latest-projects-uf-link-svg,
+.latest-projects-uf-lupa-click:hover .latest-projects-uf-lupa{
     fill: #c7b299;
 }
 
+.latest-projects-uf-link:active .latest-projects-uf-link-svg,
 .latest-projects-uf-lupa-click:active .latest-projects-uf-lupa {
     fill: #fff;
+}
+
+.latest-projects-unit:hover .latest-projects-uf-link,
+.latest-projects-unit:hover .latest-projects-uf-lupa-click {
+    display: block;
 }
 
 .latest-projects-unit-txt {
