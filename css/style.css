@@ -1420,6 +1420,11 @@ main {
     opacity: 1;
 }
 
+.partners:hover > *:active {
+    transform: scale(1);
+    opacity: 0.3;
+}
+
 /*Стили для footer*/
 
 .footer {
