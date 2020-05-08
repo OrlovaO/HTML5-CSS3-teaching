@@ -724,40 +724,15 @@ main {
     background-color: #8c8c8c;
 }
 
-.latest-projects-unit-fon {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 106px 146px 105px 144px;
-    width: 370px;
-    height: 237px;
-    background-color: rgba(17, 17, 17, 0.7);
-    position: absolute;
-    display: none;
+.latest-projects-unit > * {
+    transition: 200ms;
 }
 
-.latest-projects-unit:hover .latest-projects-unit-fon {
-    display: block;
+.latest-projects-unit:hover .latest-projects-unit-img {
+    filter: brightness(50%);
 }
 
-.latest-projects-unit:hover .latest-projects-uf-click {
-    display: block;
-}
-
-.latest-projects-uf-link {
-    display: none;
-    outline: none;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: 26px;
-    height: 25px;
-    border: 0;
-    background-color: transparent;
-    position: absolute;
-    top: 106px;
-    left: 144px;
-}
-
+.latest-projects-uf-link,
 .latest-projects-uf-lupa-click {
     display: none;
     outline: none;
@@ -769,6 +744,14 @@ main {
     border: 0;
     background-color: transparent;
     position: absolute;
+}
+
+.latest-projects-uf-link {
+    top: 106px;
+    left: 144px;
+}
+
+.latest-projects-uf-lupa-click {
     top: 106px;
     left: 198px;
 }
@@ -1178,6 +1161,10 @@ main {
     position: relative;
 }
 
+.recent-posts-unit > * {
+    transition: 300ms;
+}
+
 .recent-posts-clr {
     box-sizing: border-box;
     margin: 0;
@@ -1230,19 +1217,6 @@ main {
     background-color: #777;
 }
 
-.recent-posts-photo-veil {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: 370px;
-    height: 220px;
-    width: 370px;
-    height: 220px;
-    background-color: rgba(17, 17, 17, 0.7);
-    position: absolute;
-    display: none;
-}
-
 .recent-posts-unit-block {
     box-sizing: border-box;
     margin: 0;
@@ -1275,7 +1249,8 @@ main {
 }
 
 .recent-posts-unit-link {
-    display: block;
+    display: inline-block;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -1342,8 +1317,8 @@ main {
     fill: #d1d1d1;
 }
 
-.recent-posts-unit:hover .recent-posts-photo-veil {
-    display: block;
+.recent-posts-unit:hover .recent-posts-photo {
+    filter: brightness(50%);
 }
 
 .recent-posts-unit:hover .recent-posts-clr-day {
@@ -1371,7 +1346,7 @@ main {
     color: #fff;
 }
 
-.recent-posts-unit-link:hover .recent-posts-unit-link:after {
+.recent-posts-unit-link:hover:after {
     border-left: 4px solid #fff;
 }
 
@@ -1379,6 +1354,110 @@ main {
     color: #c7b299;
 }
 
-.recent-posts-unit-link:active .recent-posts-unit-link:after {
+.recent-posts-unit-link:active:after {
     border-left: 4px solid #c7b299;
+}
+
+/*Стили для partners*/
+
+.partners {
+    width: 100%;
+    min-height: 489px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 140px 0 139px;
+    background-image: url(../img/partners_photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #444445;
+    display: flex;
+    justify-content: center;
+}
+
+.partners-photo-link {
+    display: block;
+    margin: 0;
+    padding: 0 90px 0 0;
+    box-sizing: border-box;
+    width: 300px;
+    min-height: 210px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.partners-photo {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 210px;
+    min-height: 123px;
+    color: #fff;
+}
+
+.partners-photo-link:last-child {
+    padding: 0;
+    width: 210px;
+}
+
+.partners {
+    pointer-events: none;
+}
+
+.partners > * {
+    pointer-events: auto;
+    transition: 200ms opacity, 200ms transform;
+}
+
+.partners:hover > * {
+    opacity: 0.3;
+}
+
+.partners:hover > *:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/*Стили для footer*/
+
+.footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-footer {
+    width: 100%;
+    margin: 0;
+    padding: 80px 375px;
+    box-sizing: border-box;
+    min-height: 508px;
+    background-color: #191919;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-footer-about-waxom {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 258px;
+}
+
+
+
+
+
+
+
+.copyright-footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 111px;
+    background-color: #111111;
 }
