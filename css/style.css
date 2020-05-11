@@ -1506,7 +1506,7 @@ main {
 }
 
 .main-footer-txt:hover {
-    color: #fff;
+    color: #d1d1d1;
 }
 
 .main-footer-txt {
@@ -1554,15 +1554,15 @@ main {
 }
 
 .main-footer-link:active {
-    color: #fff;
+    color: #d1d1d1;
 }
 
 .main-footer-link:hover:after {
-    color: #c7b299;
+    border-left: 5px solid #c7b299;
 }
 
 .main-footer-link:active:after {
-    color: #fff;
+    border-left: 5px solid #d1d1d1;
 }
 
 .main-footer-recent-posts {
@@ -1575,7 +1575,7 @@ main {
 .main-footer-recent-posts-title {
     display: block;
     box-sizing: border-box;
-    margin: 0 0 33px 0;
+    margin: 26px 0 33px 0;
     padding: 0;
     font-family: 'raleway', 'verdana', sans-serif;
     font-size: 24px;
@@ -1602,7 +1602,6 @@ main {
     box-sizing: border-box;
     margin: 0 0 19px 0;
     padding: 0 0 21px 0;
-    width: 100%;
     word-break: break-all;
     text-decoration: none;
     font-family: 'montserrat', 'verdana', sans-serif;
@@ -1633,9 +1632,130 @@ main {
     color: #363636;
 }
 
+.main-footer-our-twitter {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 270px;
+}
 
+.main-footer-our-twitter-title {
+    display: block;
+    box-sizing: border-box;
+    margin: 26px 0 30px 0;
+    padding: 0;
+    font-family: 'raleway', 'verdana', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+}
 
+.main-footer-our-twitter-link {
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 0 17px 0;
+    padding: 0 0 23px 0;
+    word-break: break-all;
+    font-family: 'montserrat', 'verdana', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #555;
+    border-bottom: 2px solid #252525;
+}
 
+.main-footer-our-twitter-blue {
+    color: #00bff3;
+}
+
+.main-footer-our-twitter-time {
+    display: block;
+    box-sizing: border-box;
+    margin: 11px 0 0;
+    padding: 0;
+    font-family: 'montserrat', 'verdana', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 300;
+    color: #363636;
+}
+
+.main-footer-our-twitter-grey {
+    color: #959595;
+}
+
+.main-footer-our-twitter-link:hover {
+    color: #c7b299;
+}
+
+.main-footer-our-twitter-link:hover .main-footer-our-twitter-time {
+    color: #fff;
+}
+
+.main-footer-our-twitter-link:active {
+    color: #555;
+}
+
+.main-footer-our-twitter-link:active .main-footer-our-twitter-time {
+    color: #363636;
+}
+
+.main-footer-our-twitter-link:last-child {
+    margin: 0;
+}
+
+.main-footer-dribbble-widget {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 270px;
+}
+
+.main-footer-dribbble-widget-title {
+    display: block;
+    box-sizing: border-box;
+    margin: 26px 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'raleway', 'verdana', sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fff;
+}
+
+.main-footer-dribbble-widget-img-wrp {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-footer-dribbble-widget-img {
+    display: block;
+    box-sizing: border-box;
+    background-color: #777;
+    width: 130px;
+    height: 98px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    transition: 60ms transform;
+}
+
+.main-footer-dribbble-widget-img:last-child,
+.main-footer-dribbble-widget-img:nth-last-child(2) {
+    margin: 0;
+}
+
+.main-footer-dribbble-widget-img:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+}
 
 .copyright-footer {
     width: 100%;
