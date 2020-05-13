@@ -1799,7 +1799,7 @@ main {
 }
 
 .copyright-footer-link:nth-child(4),
-.copyright-footer-link:nth-child(6) {
+.copyright-footer-link:last-child {
     border: none;
     padding: 0;
 }
@@ -1808,7 +1808,7 @@ main {
     margin-right: 449px;
 }
 
-.copyright-footer-link:nth-child(6) {
+.copyright-footer-link:last-child {
     margin: 0;
 }
 
