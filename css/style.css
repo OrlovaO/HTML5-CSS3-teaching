@@ -1429,7 +1429,7 @@ main {
     margin: 0;
     padding: 0;
     width: 210px;
-    min-height: 123px;
+    min-height: 127px;
     color: #fff;
 }
 
@@ -2041,34 +2041,45 @@ main {
 
     .partners {
         padding: 50px 5%;
-        flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
+        min-height: 0;
     }
 
     .partners-photo-link {
         padding-right: 0;
-        width: 210px;
+        width: 63px;
+        min-height: 63px;
         align-items: center;
     }
 
     .partners-photo {
-        width: 168px;
+        min-height: 38px;
+        max-height: 63px;
     }
 
+    .partners-photo-link:last-child{
+        width: 63px;
+        min-height: 63px;
+    }
+    
     .partners-photo1 {
-        height: 102px;
+        height: 38px;
+        width: 63px;
     }
 
     .partners-photo2 {
-        height: 168px;
+        height: 63px;
+        width: 63px;
     }
 
     .partners-photo3 {
-        height: 104px;
+        height: 39px;
+        width: 63px;
     }
 
     .partners-photo4 {
-        height: 131px;
+        height: 49px;
+        width: 63px;
     }
 
     .main-footer {
