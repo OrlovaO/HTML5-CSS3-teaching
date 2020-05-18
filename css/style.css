@@ -1064,7 +1064,7 @@ main {
 
 .excellent-for-mobile-list-item {
     box-sizing: border-box;
-    min-height: 21px;
+    min-height: 22px;
     margin: 0 0 12px 0;
     padding: 0 0 0 42px;
     position: relative;
@@ -1076,8 +1076,8 @@ main {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    min-width: 21px;
-    min-height: 21px;
+    min-width: 22px;
+    min-height: 22px;
     vertical-align: center;
     background-image: url('../img/excellent_for_mobile_list_item.png');
     background-position: center;
