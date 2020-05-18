@@ -1921,13 +1921,14 @@ main {
     .main-header-burger-line {
         display: block;
         box-sizing: border-box;
+        margin: 0 auto 7px;
+        padding: 0;
         width: 32px;
         height: 4px;
         border-radius: 4px;
         position: relative;
         z-index: 1;
         background: #fff;
-        margin: 0 0 7px 0;
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
             background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
@@ -1967,7 +1968,7 @@ main {
         box-sizing: border-box;
         margin: 0;
         padding: 10px;
-        width: 75vw;
+        width: 0;
         height: 0;
         background-color: rgba(0, 0, 0, 0.8);
         display: flex;
@@ -1976,20 +1977,16 @@ main {
         align-items: center;
         transform: translate(-100%, 0%);
         visibility: hidden;
-        transition: height 600ms ease;
+        transition: 500ms ease;
     }
 
     .main-header-burger-link {
         display: block;
         box-sizing: border-box;
-        margin: 10px 0 0;
+        margin: 0;
         height: 0;
         width: 0;
         padding: 0;
-        font-family: 'montserrat', 'verdana', sans-serif;
-        font-size: 0px;
-        line-height: 0px;
-        font-weight: 0;
         text-align: center;
         text-decoration: none;
         background-color: transparent;
@@ -1997,27 +1994,24 @@ main {
         border-radius: 3px;
         word-wrap: break-word;
         visibility: hidden;
-        transition: 600ms ease;
+        transition: 500ms ease;
     }
 
     .main-header-burger-link:first-child {
         margin-top: 0;
     }
 
-    .main-header-burger-link:last-child {
-        margin-bottom: 10px;
-    }
-
     .main-header-burger-click:checked ~ .main-header-burger-nav {
         visibility: visible;
-        height: 446px;
+        width: 75vw;
+        min-height: 446px;
     }
 
     .main-header-burger-click:checked ~ .main-header-burger-nav > * {
         visibility: visible;
         margin: 10px 0 0;
         width: 70%;
-        height: 42px;
+        min-height: 42px;
         padding: 10px;
         font-family: 'montserrat', 'verdana', sans-serif;
         font-size: 22px;
@@ -2025,6 +2019,10 @@ main {
         font-weight: 400;
         background-color: #c7b299;
         color: #fff;
+    }
+
+    .main-header-burger-click:checked ~ .main-header-burger-nav > .main-header-burger-link:last-child {
+        margin-bottom: 10px;
     }
 
     .main-header-wrp1-2 {
