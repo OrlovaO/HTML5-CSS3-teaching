@@ -1900,6 +1900,7 @@ main {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        width: 36px;
         position: relative;
         z-index: 1;
         -webkit-user-select: none;
@@ -1931,10 +1932,6 @@ main {
             opacity 0.55s ease;
     }
 
-    .main-header-burger-line:last-child {
-        margin-bottom: 0;
-    }
-
     .main-header-burger-line:first-child {
         transform-origin: 0% 0%;
         transition: width, 0.5s;
@@ -1943,6 +1940,7 @@ main {
     .main-header-burger-line:nth-last-child(2) {
         transform-origin: 0% 100%;
         transition: width, 0.5s;
+        margin-bottom: 0;
     }
 
     .main-header-burger-click:checked ~ .main-header-burger-line {
@@ -1963,41 +1961,41 @@ main {
     .main-header-burger-nav {
         display: block;
         position: absolute;
-        top: 134.5px;
-        left: 41px;
+        top: 136px;
         box-sizing: border-box;
         margin: 0;
-        padding: 10px;
-        width: 442px;
-        min-height: 524px;
+        padding: 10px 10px 20px 10px;
+        width: 75vw;
+        height: 0;
         background-color: rgba(0, 0, 0, 0.8);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         transform: translate(-100%, 0%);
-        transform-origin: 0% 0%;
-        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
         visibility: hidden;
-
+        transition: height 600ms ease;
     }
 
     .main-header-burger-link {
         display: block;
         box-sizing: border-box;
-        margin: 10px 0 0;
-        padding: 10px;
-        width: 70%;
+        margin: 0;
+        height: 0;
+        width: 0;
+        padding: 0;
         font-family: 'montserrat', 'verdana', sans-serif;
-        font-size: 22px;
-        line-height: 22px;
-        font-weight: 400;
+        font-size: 0px;
+        line-height: 0px;
+        font-weight: 0;
         text-align: center;
         text-decoration: none;
-        background-color: #c7b299;
-        color: #fff;
+        background-color: transparent;
+        color: transparent;
         border-radius: 3px;
-        transition: color 0.3s ease;
+        word-wrap: break-word;
+        visibility: hidden;
+        transition: 600ms ease;
     }
 
     .main-header-burger-link:first-child {
@@ -2006,6 +2004,21 @@ main {
 
     .main-header-burger-click:checked ~ .main-header-burger-nav {
         visibility: visible;
+        height: 446px;
+    }
+
+    .main-header-burger-click:checked ~ .main-header-burger-nav > * {
+        visibility: visible;
+        margin: 10px 0 0;
+        width: 70%;
+        height: 42px;
+        padding: 10px;
+        font-family: 'montserrat', 'verdana', sans-serif;
+        font-size: 22px;
+        line-height: 22px;
+        font-weight: 400;
+        background-color: #c7b299;
+        color: #fff;
     }
 
     .main-header-wrp1-2 {
