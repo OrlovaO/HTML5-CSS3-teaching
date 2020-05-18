@@ -1064,6 +1064,7 @@ main {
 
 .excellent-for-mobile-list-item {
     box-sizing: border-box;
+    min-height: 21px;
     margin: 0 0 12px 0;
     padding: 0 0 0 42px;
     position: relative;
@@ -1075,8 +1076,8 @@ main {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    width: 21px;
-    height: 21px;
+    min-width: 21px;
+    min-height: 21px;
     vertical-align: center;
     background-image: url('../img/excellent_for_mobile_list_item.png');
     background-position: center;
@@ -1919,13 +1920,14 @@ main {
 
     .main-header-burger-line {
         display: block;
+        box-sizing: border-box;
         width: 32px;
         height: 4px;
         border-radius: 4px;
         position: relative;
         z-index: 1;
         background: #fff;
-        margin-bottom: 7px;
+        margin: 0 0 7px 0;
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
             background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
@@ -1964,7 +1966,7 @@ main {
         top: 136px;
         box-sizing: border-box;
         margin: 0;
-        padding: 10px 10px 20px 10px;
+        padding: 10px;
         width: 75vw;
         height: 0;
         background-color: rgba(0, 0, 0, 0.8);
@@ -1980,7 +1982,7 @@ main {
     .main-header-burger-link {
         display: block;
         box-sizing: border-box;
-        margin: 0;
+        margin: 10px 0 0;
         height: 0;
         width: 0;
         padding: 0;
@@ -2000,6 +2002,10 @@ main {
 
     .main-header-burger-link:first-child {
         margin-top: 0;
+    }
+
+    .main-header-burger-link:last-child {
+        margin-bottom: 10px;
     }
 
     .main-header-burger-click:checked ~ .main-header-burger-nav {
