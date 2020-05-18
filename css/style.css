@@ -2310,6 +2310,14 @@ main {
         top: 3px;
     }
 
+    .recent-posts-unit-link:hover:after {
+        border-left: 6px solid #fff;
+    }
+
+    .recent-posts-unit-link:active:after {
+        border-left: 6px solid #c7b299;
+    }
+
     .recent-posts-pag {
         width: 25%;
         justify-content: space-between;
